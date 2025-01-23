@@ -10,7 +10,7 @@ const nodemailer = require('nodemailer');
 const RegisterModel = require('./models/Register');
 const ToDoModel = require('./models/Todo');
 
-mongoose.connect("mongodb://127.0.0.1:27017/srujan");
+mongoose.connect("mongodb://0.0.0/0/");
 
 app.post('/register',(req , res)=>{
     const {name , mail , password } = req.body;
